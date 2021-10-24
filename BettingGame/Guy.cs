@@ -11,7 +11,7 @@ namespace BettingGame
         /// </summary>
         public void WriteMyInfo()
         {
-            Console.WriteLine(Name + " has " + Cash + "bucks.");
+            Console.WriteLine(Name + " has " + Cash + " bucks.");
         }
         /// <summary>
         /// Give some of my cash, removing it from my wallet(or
@@ -31,7 +31,7 @@ namespace BettingGame
             }
             if (amount > Cash )
             {
-                Console.WriteLine(Name + " Says:" + "I don't have enough cash to give  you " + amount);
+                Console.WriteLine(Name + " Says:" + "I don't have enough cash to give you "+ amount);
                 return 0;
             }
             Cash -= amount;
